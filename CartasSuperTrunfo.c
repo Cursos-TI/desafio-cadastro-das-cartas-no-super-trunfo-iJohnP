@@ -2,17 +2,18 @@
 
 int main(){
   
-    //Carta 1 e 2 (A, B)
-    char estado[15], estado2[15];
-    char codigo_Carta[10], codigo_Carta2[10];
-    char nome_Cidade[10], nome_Cidade2[10];
-    float população, população2;
-    float área, área2;
-    float pib, pib2;
-    int pontos_Turisticos, pontos_Turisticos2;
+    // Declaracao de variáveis
+    // Carta 1 e 2 (A, B)
+    char estado[30], estado2[30]; // estado (ex: Ceará) 
+    char codigo_Carta[10], codigo_Carta2[10]; // código da carta (ex: A01)
+    char nome_Cidade[30], nome_Cidade2[30]; // nome da cidade (ex: Aracaju)
+    float populacao, populacao2; // quantidade da populacao (ex: 2.279.686)
+    float area, area2; // área total (ex: 11.401 km²)
+    float pib, pib2; // produto interno bruto (ex: 18.4bi)
+    int pontos_Turisticos, pontos_Turisticos2; // quantidade de pontos turisticos na cidade (ex: 24)
 
-    //Incersao de dados da Carta 1
-    printf("Carta 1:\n");
+    // entrada de dados da Carta 1
+    printf("Carta 1: \n");
     
     printf("Estado: ");
     scanf("%s", estado);
@@ -24,18 +25,19 @@ int main(){
     scanf("%s", nome_Cidade);
     
     printf("População: ");
-    scanf("%f", &população);
+    scanf("%f", &populacao);
     
     printf("Área (em km²): ");
-    scanf("%f", &área);
+    scanf("%f", &area);
     
     printf("PIB: ");
     scanf("%f", &pib);
     
     printf("Número de Pontos Turisticos: ");
     scanf("%d", &pontos_Turisticos);
+    // fim da incersao de dados da Carta 1
 
-    //Incersao de dados da Carta 2
+    // entrada de dados da Carta 2
     printf("Carta 2:\n");
     
     printf("Estado: ");
@@ -48,16 +50,17 @@ int main(){
     scanf("%s", nome_Cidade2);
     
     printf("População: ");
-    scanf("%f", &população2);
+    scanf("%f", &populacao2);
     
     printf("Área (em km²): ");
-    scanf("%f", &área2);
+    scanf("%f", &area2);
     
     printf("PIB: ");
     scanf("%f", &pib2);
     
     printf("Número de Pontos Turisticos: ");
     scanf("%d", &pontos_Turisticos2);
+    // fim da incersao de dados da Carta 2
 
     // impressao das informacoes fonecidas pelo user (carta 1)
     printf("Carta 1: \n");
@@ -68,13 +71,14 @@ int main(){
 
     printf("Nome da Cidade: %s\n", nome_Cidade);
 
-    printf("População: %3f\n", população);
+    printf("População: %.2f\n", populacao);
 
-    printf("Área: %.3f km²\n", área);
+    printf("Área: %.2f km²\n", area);
 
-    printf("PIB: %.1f bilhões de reais\n", pib);
+    printf("PIB: %.2f bilhões de reais\n", pib);
     
     printf("Números de Pontos Turisticos: %d\n", pontos_Turisticos);
+    // fim da impressao das informacoes fonecidas pelo user (carta 1)
 
 
     // impressao das informacoes fonecidas pelo user (carta 2)
@@ -86,14 +90,15 @@ int main(){
     
     printf("Nome da Cidade: %s\n", nome_Cidade2);
     
-    printf("População: %3f\n", população2);
+    printf("População: %.2f\n", populacao2);
     
-    printf("Área: %.3f km²\n", área2);
+    printf("Área: %.2f km²\n", area2);
     
-    printf("PIB: %.1f bilhões de reais\n", pib2);
+    printf("PIB: %.2f bilhões de reais\n", pib2);
         
     printf("Números de Pontos Turisticos: %d\n", pontos_Turisticos2);
-
+    // fim da impressao das informacoes fonecidas pelo user (carta 2)
+    
     return 0;
 
 }
