@@ -61,7 +61,7 @@ int main(){
     printf("PIB: %.2f reais\n", pib);
     printf("Números de Pontos Turisticos: %d\n", pontos_Turisticos);
     printf("Densidade Populacional: %.2f hab/km²\n", densidade_Populacional);
-    printf("PIB per Capita: %.2f reais\n", pib_Capita);
+    printf("PIB per Capita: %f reais\n", pib_Capita);
 
     // impressao das informacoes fonecidas pelo user (carta 2)
     printf("\nCarta 2: \n");
@@ -73,7 +73,7 @@ int main(){
     printf("PIB: %.2f reais\n", pib2);    
     printf("Números de Pontos Turisticos: %d\n", pontos_Turisticos2);
     printf("Densidade Populacional: %.2f hab/km²\n", densidade_Populacional2);
-    printf("PIB per Capita: %.2f reais\n", pib_Capita2);
+    printf("PIB per Capita: %f reais\n", pib_Capita2);
     
     return 0;
 }
